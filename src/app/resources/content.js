@@ -1,14 +1,14 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Michael',
+    lastName:  'Posso',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Design Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    location:  'America/New_York',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
 
@@ -44,12 +44,19 @@ const social = [
 ]
 
 const home = {
-    label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
-}
+  label: "Home",
+  title: `${person.name}'s Portfolio`,
+  description: `Portfolio website showcasing my work as a ${person.role}`,
+  headline: <>User Experience Engineer / Educator</>,
+  subline: (
+    <>
+      Michael Posso is a seasoned UI developer and educator with over 10 years
+      of experience in web development, specializing in creating scalable,
+      user-friendly interfaces and mentoring global teams for Fortune 500
+      companies. Passionate about UX and innovation.
+    </>
+  ),
+};
 
 const about = {
     label: 'About',
